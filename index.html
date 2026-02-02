@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+</head>
+<body>
+    <!--heading-->
+    <h1>Student Feedback Form</h1>
+    <p>Please help us improve our course by filling out this form.</p>
+    <!--Forms-->
+    <form action="/submit-feedback" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+        </div><br>
+
+        <div>
+            <label for="instructor-name">Instructor's Name:</label>
+            <input type="text" id="instructor-name" name="instructor-name" required />
+        </div><br>
+
+        <div>
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course" required />
+        </div><br>
+
+        <p>Why did you choose this course?</p>
+        <div>
+            <label for="reason">Please explain:</label>
+            <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+        </div><br>
+
+        <p>How satisfied are you with the course?</p>
+        <div>
+            <label for="satisfaction">Select one:</label>
+            <select id="satisfaction" name="satisfaction" required>
+                <option value="">Select an option</option>
+                <option value="very-satisfied">Very Satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="dissatisfied">Dissatisfied</option>
+                <option value="very-dissatisfied">Very Dissatisfied</option>
+            </select>
+        </div><br>
+
+        <p>Would you recommend this course to other students?</p>
+        <input type="radio" id="recommend-yes" name="recommend-yes" value="yes" required />
+        <label for="recommend-yes">Yes</label>
+        <input type="radio" id="recommend-no" name="recommend-no" value="no" required />
+        <label for="recommend-no">No</label>
+        <div><br>
+            
+            <button type="submit">Submit Feedback</button>
+
+    </form>
+    
+</body>
+</html>
