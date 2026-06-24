@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: lightgreen;   
+}
+
+.container{
+    width: 600px;
+    margin: 50px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+h1{
+    font-size: bold;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.heading-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.heading-line span {
+    width: 100px;
+    height: 20px;
+    background: black;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+
+}
+
+.hp{
+    font-size: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input{
+    border-color: black;
+    font-size: 16px;
+    width: 100;
+    padding: 10px;
+}
+
+textarea{
+    padding: 20px;
+    border-color: black;
+    font-size: 16px;
+    Width: 100%;
+}
+
+p{
+    font-size: 16px;
+}
+
+.btn{
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.btn:hover{
+    color: lightgreen;
+}
+
+
+
+
+
+

@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Student Feedback</title>
 </head>
 <body>
     <!--heading-->
-    <h1>Student Feedback Form</h1>
-    <p>Please help us improve our course by filling out this form.</p>
-    <!--Forms-->
-    <form action="/submit-feedback" method="POST">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-        </div><br>
+    <div class="container">
+        <h1>Student Feedback Form</h1>
+        <div class="heading-line">
+           <span></span>
+           <div class="dot"></div>
+          <span></span>
+        </div>
+        <p class="hp">Please help us improve our course by filling out this form.</p>
+        <!--Forms-->
+        <form action="/submit-feedback" method="POST" id="feedbackForm">
+           <div>
+             <label for="name">Name:</label><br>
+             <input type="text" id="name" name="name" required />
+           </div><br>
 
-        <div>
-            <label for="instructor-name">Instructor's Name:</label>
-            <input type="text" id="instructor-name" name="instructor-name" required />
-        </div><br>
+            <div>
+                <label for="instructor-name">Instructor's Name:</label><br>
+                <input type="text" id="instructor-name" name="instructor-name" required />
+            </div><br>
 
-        <div>
-            <label for="course">Course</label>
-            <input type="text" id="course" name="course" required />
-        </div><br>
+            <div>
+               <label for="course">Course</label><br>
+               <input type="text" id="course" name="course" required />
+            </div><br>
 
         <p>Why did you choose this course?</p>
         <div>
-            <label for="reason">Please explain:</label>
+            <label for="reason">Please explain:</label><br>
             <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
         </div><br>
 
@@ -46,15 +53,18 @@
         </div><br>
 
         <p>Would you recommend this course to other students?</p>
-        <input type="radio" id="recommend-yes" name="recommend-yes" value="yes" required />
-        <label for="recommend-yes">Yes</label>
-        <input type="radio" id="recommend-no" name="recommend-no" value="no" required />
-        <label for="recommend-no">No</label>
+        <div>
+              <input type="radio" id="recommend-yes" name="recommend-yes" value="yes" required />
+             <label for="recommend-yes">Yes</label>
+
+             <input type="radio" id="recommend-no" name="recommend-no" value="no" required />
+             <label for="recommend-no">No</label>
         <div><br>
             
-            <button type="submit">Submit Feedback</button>
+         <button type="submit" class="btn">Submit Feedback</button>
 
-    </form>
-    
+        </form>
+    </div>
+<script src="main.js"></script>
 </body>
 </html>
