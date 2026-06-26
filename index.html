@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <title>Student Feedback</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
         <p class="hp">Please help us improve our course by filling out this form.</p>
         <!--Forms-->
         <form action="/submit-feedback" method="POST" id="feedbackForm">
-           <div>
+           <div> 
              <label for="name">Name:</label><br>
              <input type="text" id="name" name="name" required />
            </div><br>
@@ -55,10 +55,10 @@
 
         <p>Would you recommend this course to other students?</p>
         <div>
-              <input type="radio" id="recommend-yes" name="recommend-yes" value="yes" required />
+              <input type="radio" id="recommend-yes" name="recommend" value="yes" required />
              <label for="recommend-yes">Yes</label>
 
-             <input type="radio" id="recommend-no" name="recommend-no" value="no" required />
+             <input type="radio" id="recommend-no" name="recommend" value="no" required />
              <label for="recommend-no">No</label>
         <div><br>
             
