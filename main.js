@@ -6,19 +6,32 @@ Form.addEventListener("submit", function(event){})
 }
 
 const name = document.getElementById("name").value;
+const instructor = document.getElementById("instructorName").value;
+const course = document.getElementById("course").value;
+const feedback = document.getElementById("feedback").value;
+
 console.log(name);
-
-const name = document.getElementById("instructor_name").value;
-console.log(instructor_name);
-
-const name = document.getElementById("course").value;
+console.log(instructor);
 console.log(course);
-
-const name = document.getElementById("reason").value;
-console.log(reason);
+console.log(feedback);
 
 if (name === ""){
     alert("please enter name");
+    return;
+}
+
+if (instructor === ""){
+    alert("please enter instructor");
+    return;
+}
+
+if (course === ""){
+    alert("please enter course");
+    return;
+}
+
+if (feedback === ""){
+    alert("please enter your feedback");
     return;
 }
 
@@ -31,9 +44,17 @@ fetch("/feedback", {
         name,
         instructor,
         course,
-        please 
+        feedback
     })
 });
+
+then(response => response.json())
+.then(data => {
+    alert(data.message);
+})
+.catch(error => {
+    console.error(error);
+})
     
 
 
